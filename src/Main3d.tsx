@@ -59,7 +59,6 @@ export default function Scene() {
       <div className="sc-spacer" />
 
       <main ref={main} className="sc-main">
-        <span className="sc-eyebrow"><i />Disponibile per nuovi progetti</span>
         <h1>Gianluca Raftacco</h1>
         <p>Full Stack Developer.</p>
       </main>
@@ -73,7 +72,7 @@ export default function Scene() {
           <p className="c">$ whoami</p>
           <h2>Gianluca Raftacco</h2>
           <p>
-            FFull Stack Developer who likes building complex web stuff and making it work well.
+            Full Stack Developer who likes building complex web stuff and making it work well.
             I’ve spent a lot of time on advanced Laravel + Vue + Tailwind projects, and I’m pretty comfortable with React, Next.js and shadcn/ui too.
             I also have solid experience with WordPress, the not-so-simple kind: custom plugins, bespoke themes built with Roots Sage, and sites with a lot of moving parts.
             These days I’m at Elsist, working on a web-based SCADA (a SaaS built with React, Next.js and Konva.js), plus a web portal with an e-commerce and a product activation system. I’m also following the development of new web pages to configure the product’s operating system through a Python API.

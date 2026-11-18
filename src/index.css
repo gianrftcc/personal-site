@@ -1,0 +1,22 @@
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+  background: #242424;
+  mix-blend-mode: screen;
+  opacity: 0.35;
+  pointer-events: none;
+}
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background-image: url("./assets/disturbo.gif");
+  background-repeat: repeat;
+  opacity: 0.12;
+  pointer-events: none;
+  /*mix-blend-mode: overlay;*/
+	mix-blend-mode: soft-light;
+}

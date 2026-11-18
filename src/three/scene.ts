@@ -582,7 +582,7 @@ var zt=new THREE.CanvasTexture(zc),zs=[0,1,2].map(function(){var sp=new THREE.Sp
 
     cam.lookAt(tx, ty, 0);
 
-    cam.zoom = Math.exp(Math.log(zt / zb) * e);
+    cam.zoom = 0.6 * Math.exp(Math.log(zt / zb) * e);
     cam.updateProjectionMatrix();
     cam.updateMatrixWorld();
 

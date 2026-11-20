@@ -23,9 +23,6 @@ export default function Scene() {
     history.scrollRestoration = 'manual';
     window.scrollTo(0, 0);
 
-    //const noise = initNoise();
-    //(window as any).__noise = noise.ready;
-
     const html = document.documentElement;
     const safety = window.setTimeout(() => html.classList.add('ready'), 3500); // se WebGL non parte
     let dispose: (() => void) | undefined;
@@ -93,6 +90,26 @@ export default function Scene() {
           </p>
           
           <p className="c" style={{ fontSize: '.5em' }}>
+            3D: “Walk Cycle” di <a href="https://sketchfab.com/3d-models/walk-cycle-05c7560e49c1441aa0c70d3dc7bc710b">skywarrior34niraj</a>, CC BY 4.0
+            <br />
+            3D: “Wolf” di <a href="https://sketchfab.com/3d-models/wolf-e319f122c2474d3186b841b019fb0edd">OLEKSO</a>, CC BY-NC 4.0
+          </p>
+                    <p className="c" style={{ fontSize: '.5em' }}>
+            3D: “Walk Cycle” di <a href="https://sketchfab.com/3d-models/walk-cycle-05c7560e49c1441aa0c70d3dc7bc710b">skywarrior34niraj</a>, CC BY 4.0
+            <br />
+            3D: “Wolf” di <a href="https://sketchfab.com/3d-models/wolf-e319f122c2474d3186b841b019fb0edd">OLEKSO</a>, CC BY-NC 4.0
+          </p>
+                    <p className="c" style={{ fontSize: '.5em' }}>
+            3D: “Walk Cycle” di <a href="https://sketchfab.com/3d-models/walk-cycle-05c7560e49c1441aa0c70d3dc7bc710b">skywarrior34niraj</a>, CC BY 4.0
+            <br />
+            3D: “Wolf” di <a href="https://sketchfab.com/3d-models/wolf-e319f122c2474d3186b841b019fb0edd">OLEKSO</a>, CC BY-NC 4.0
+          </p>
+                    <p className="c" style={{ fontSize: '.5em' }}>
+            3D: “Walk Cycle” di <a href="https://sketchfab.com/3d-models/walk-cycle-05c7560e49c1441aa0c70d3dc7bc710b">skywarrior34niraj</a>, CC BY 4.0
+            <br />
+            3D: “Wolf” di <a href="https://sketchfab.com/3d-models/wolf-e319f122c2474d3186b841b019fb0edd">OLEKSO</a>, CC BY-NC 4.0
+          </p>
+                    <p className="c" style={{ fontSize: '.5em' }}>
             3D: “Walk Cycle” di <a href="https://sketchfab.com/3d-models/walk-cycle-05c7560e49c1441aa0c70d3dc7bc710b">skywarrior34niraj</a>, CC BY 4.0
             <br />
             3D: “Wolf” di <a href="https://sketchfab.com/3d-models/wolf-e319f122c2474d3186b841b019fb0edd">OLEKSO</a>, CC BY-NC 4.0

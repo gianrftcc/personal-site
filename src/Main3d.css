@@ -73,15 +73,64 @@ html:not(.ready) .sc-main, html:not(.ready) .sc-hint { visibility: hidden; }
 /* schermata del monitor (posizione/dimensioni/--fs le imposta mountScene) */
 
 .sc-screen {
-  position: fixed; z-index: 4; left: 0; top: 0; width: 0; height: 0; overflow: hidden; opacity: 0; pointer-events: none;
-  background: #0a0a0a; border: 1px solid #2a2a2a; box-sizing: border-box; font-size: var(--fs, 14px); line-height: 1.6; color: var(--ink);
+  position: fixed;
+  z-index: 4;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: auto;
+
+  display: flex;
+  flex-direction: column;
+
+  background: #0a0a0a;
+  border: 1px solid #2a2a2a;
+  box-sizing: border-box;
+
+  font-size: var(--fs, 14px);
+  line-height: 1.6;
+  color: var(--ink);
 }
-.sc-screen::before { content: ""; position: absolute; inset: 0; background: var(--noise-url) 0 0 / 160px 160px; opacity: var(--noise-opacity, .12); }
+
+.sc-screen::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--noise-url) 0 0 / 160px 160px;
+  opacity: var(--noise-opacity, .12);
+  pointer-events: none;
+}
+
 .sc-screen .bar, .sc-screen .body { position: relative; }
-.sc-screen .bar { display: flex; align-items: center; gap: .5em; padding: .8em 1.1em; border-bottom: 1px solid #222; color: var(--mute); font-size: .8em; }
+
+.sc-screen .bar {
+  position: relative;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: .5em;
+  padding: .8em 1.1em;
+  border-bottom: 1px solid #222;
+  color: var(--mute);
+  font-size: .8em;
+}
 .sc-screen .bar i { width: .65em; height: .65em; border-radius: 50%; background: #3a3a3a; }
 .sc-screen .bar span { margin-left: .6em; }
-.sc-screen .body { padding: 1.4em 1.6em; }
+
+.sc-screen .body {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 1.4em 1.6em;
+  scrollbar-width: thin;
+  scrollbar-color: #444 transparent;
+}
+
 .sc-screen .c { color: var(--mute); margin: 2em 0 .3em; }
 .sc-screen h2 { font-size: 2.2em; font-weight: 500; margin: .1em 0 .3em; letter-spacing: -.02em; }
 .sc-screen p { margin: 0; max-width: 52ch; font-size: 1em; }
